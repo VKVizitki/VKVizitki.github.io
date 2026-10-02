@@ -30,3 +30,10 @@ async function shareCard(btn){
     setTimeout(()=>btn.textContent = t, 1200);
   }
 }
+
+/* Раскрытие списка категории */
+function toggleCat(el){
+  const list = el.nextElementSibling;
+  el.classList.toggle('open');
+  list.classList.toggle('open');
+}
