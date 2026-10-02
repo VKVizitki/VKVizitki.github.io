@@ -20,7 +20,24 @@
   <div class="card__body">
     <div class="card__name">Перизат Сметова</div>
     <div class="card__role">Категорийный менеджер</div>
-    <div class="card__cat">NONFOOD МИКС</div>
+
+    <div class="card__cat" onclick="toggleCat(this)">
+      NONFOOD МИКС <span class="card__cat__arrow">▼</span>
+    </div>
+
+    <div class="card__cat__list">
+      <div class="card__cat__list__inner">
+        <h4>Что входит в категорию</h4>
+        <ul>
+          <li>Бытовая химия</li>
+          <li>Косметика и гигиена</li>
+          <li>Посуда</li>
+          <li>Товары для дома</li>
+          <li>Игрушки</li>
+          <li>Канцелярия</li>
+        </ul>
+      </div>
+    </div>
 
     <div class="card__actions">
       <a class="btn btn--primary" href="tel:+77079232421">📞 Позвонить</a>
