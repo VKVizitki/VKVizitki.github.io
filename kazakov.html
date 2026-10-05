@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ильдар Казаков — Вкусная Корзинка</title>
+<meta name="theme-color" content="#4CAF2E">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="card">
+
+  <div class="card__top">
+    <a href="org.html" class="card__logo">
+      <img src="assets/logo.png" alt="KORZINKA">
+    </a>
+  </div>
+
+  <div class="card__body">
+    <div class="card__name">Ильдар Казаков</div>
+    <div class="card__role">Генеральный директор</div>
+
+    <div class="card__actions">
+      <a class="btn btn--primary" href="tel:+77078888807">📞 Позвонить</a>
+      <a class="btn btn--primary" href="https://wa.me/77078888807" target="_blank" rel="noopener"><img src="assets/whatsapp.png" alt="" class="btn__ico">WhatsApp</a>
+      <a class="btn btn--accent" href="mailto:kazakov.i@vkorzinka.kz">✉️ Email</a>
+      <button class="btn btn--ghost" onclick="saveVCard(this)"
+        data-first="Ильдар" data-last="Казаков"
+        data-full="Ильдар Казаков"
+        data-org="Вкусная Корзинка"
+        data-role="Генеральный директор"
+        data-phone="+77078888807"
+        data-email="kazakov.i@vkorzinka.kz"
+        data-address="г. Тараз, мкр Алатау 11">💾 Контакт</button>
+      <button class="btn btn--ghost btn--full" onclick="shareCard(this)"
+        data-title="Ильдар Казаков — Вкусная Корзинка"
+        data-text="Визитка Ильдара Казакова, Вкусная Корзинка">🔗 Поделиться</button>
+    </div>
+
+    <div class="card__contacts">
+      <a class="contact" href="tel:+77078888807">
+        <div class="contact__ico">📱</div>
+        <span>+7 707 888 88 07</span>
+      </a>
+      <a class="contact" href="mailto:kazakov.i@vkorzinka.kz">
+        <div class="contact__ico">✉️</div>
+        <span>kazakov.i@vkorzinka.kz</span>
+      </a>
+      <a class="contact" href="https://www.instagram.com/vkusnaya_korzinka" target="_blank" rel="noopener">
+        <div class="contact__ico"><img src="assets/instagram.png" alt="Instagram"></div>
+        <span>@vkusnaya_korzinka</span>
+      </a>
+      <a class="contact" href="https://2gis.kz/taraz/geo/70000001090535986" target="_blank" rel="noopener">
+        <div class="contact__ico">📍</div>
+        <span>г. Тараз, мкр Алатау 11</span>
+      </a>
+    </div>
+
+    <div class="card__footer">
+      <a href="org.html">Подробнее про Вкусную Корзинку →</a>
+    </div>
+  </div>
+
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>
