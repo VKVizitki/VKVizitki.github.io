@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Галина Тайметова — Вкусная Корзинка</title>
+<meta name="theme-color" content="#4CAF2E">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="card">
+
+  <div class="card__top">
+    <a href="org.html" class="card__logo">
+      <img src="assets/logo.png" alt="KORZINKA">
+    </a>
+  </div>
+
+  <div class="card__body">
+    <div class="card__name">Галина Тайметова</div>
+    <div class="card__role">Категорийный менеджер</div>
+
+    <div class="card__cat" onclick="toggleCat(this)">
+      Напитки · Табак · Снеки <span class="card__cat__arrow">▼</span>
+    </div>
+
+    <div class="card__cat__list">
+      <div class="card__cat__list__inner">
+        <h4>Что входит в категорию</h4>
+        <ul>
+          <li>Алкогольные напитки</li>
+          <li>Безалкогольные напитки</li>
+          <li>Табачные изделия</li>
+          <li>Снеки</li>
+          <li>Корма для животных</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card__actions">
+      <a class="btn btn--primary" href="tel:+77770421603">📞 Позвонить</a>
+      <a class="btn btn--primary" href="https://wa.me/77770421603" target="_blank" rel="noopener"><img src="assets/whatsapp.png" alt="" class="btn__ico">WhatsApp</a>
+      <a class="btn btn--accent" href="mailto:taymetova.g@vkorzinka.kz">✉️ Email</a>
+      <button class="btn btn--ghost" onclick="saveVCard(this)"
+        data-first="Галина" data-last="Тайметова"
+        data-full="Галина Тайметова"
+        data-org="Вкусная Корзинка"
+        data-role="Категорийный менеджер"
+        data-phone="+77770421603"
+        data-email="taymetova.g@vkorzinka.kz"
+        data-address="г. Тараз, мкр Алатау 11">💾 Контакт</button>
+      <button class="btn btn--ghost btn--full" onclick="shareCard(this)"
+        data-title="Галина Тайметова — Вкусная Корзинка"
+        data-text="Визитка Галины Тайметовой, Вкусная Корзинка">🔗 Поделиться</button>
+    </div>
+
+    <div class="card__contacts">
+      <a class="contact" href="tel:+77770421603">
+        <div class="contact__ico">📱</div>
+        <span>+7 777 042 16 03</span>
+      </a>
+      <a class="contact" href="mailto:taymetova.g@vkorzinka.kz">
+        <div class="contact__ico">✉️</div>
+        <span>taymetova.g@vkorzinka.kz</span>
+      </a>
+      <a class="contact" href="https://www.instagram.com/vkusnaya_korzinka" target="_blank" rel="noopener">
+        <div class="contact__ico"><img src="assets/instagram.png" alt="Instagram"></div>
+        <span>@vkusnaya_korzinka</span>
+      </a>
+      <a class="contact" href="https://2gis.kz/taraz/geo/70000001090535986" target="_blank" rel="noopener">
+        <div class="contact__ico">📍</div>
+        <span>г. Тараз, мкр Алатау 11</span>
+      </a>
+    </div>
+
+    <div class="card__footer">
+      <a href="org.html">Подробнее про Вкусную Корзинку →</a>
+    </div>
+  </div>
+
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>
